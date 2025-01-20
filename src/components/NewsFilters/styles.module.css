@@ -1,0 +1,7 @@
+.filters {
+  display: flex;
+  widht: 100%;
+  flex-direction: column;
+  gap: 12px;
+}
+
