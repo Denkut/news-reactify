@@ -1,5 +1,5 @@
 import withSkeleton from "../../helpers/hocs/with-skeleton";
-import NewsItem from "../NewsItem/NewsItem";
+import NewsItem from "../NewsItem/news-item";
 import styles from "./styles.module.css";
 
 const NewsList = ({ news }) => {
