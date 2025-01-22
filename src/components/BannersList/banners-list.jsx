@@ -1,5 +1,5 @@
 import withSkeleton from "../../helpers/hocs/with-skeleton";
-import NewsBanner from "../NewsBanner/NewsBanner";
+import NewsBanner from "../NewsBanner/news-banner";
 import styles from "./styles.module.css";
 
 const BannersList = ({ banners }) => {
