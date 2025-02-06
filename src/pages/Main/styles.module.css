@@ -1,6 +1,6 @@
 .main {
   display: grid;
-  widht: 100%;
+  width: 100%;
   grid-template-columns: 1fr 1fr;
   gap: 32px;
 }
