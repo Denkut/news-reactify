@@ -7,7 +7,7 @@
 .rowList {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  widhth: 100%;
+  width: 100%;
   gap: 12px;
   box-sizing: border-box;
 }
