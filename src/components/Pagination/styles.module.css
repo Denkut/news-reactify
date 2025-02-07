@@ -1,5 +1,4 @@
-  
- .pagination {
+.pagination {
   display: flex;
   width: 100%;
   gap: 12px;
@@ -7,12 +6,11 @@
   justify-content: center;
   padding: 16px;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Светлая тема */
 .pagination.light {
-  background-color: #f9f9f9;
+  background-color: #fff;
 }
 
 .pagination.light .pageNumber,
@@ -26,14 +24,12 @@
 .pagination.light .arrow:hover {
   background-color: #007bff;
   color: #fff;
-  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
   transform: translateY(-2px);
 }
 
 /* Темная тема */
 .pagination.dark {
   background-color: #23272f;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 .pagination.dark .pageNumber,
@@ -47,7 +43,6 @@
 .pagination.dark .arrow:hover {
   background-color: #0056b3;
   color: #fff;
-  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
   transform: translateY(-2px);
 }
 
@@ -63,26 +58,19 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.pageNumber:disabled,
-.arrow:disabled {
-  border-color: #444;
-  background-color: #2b2f36;
-  color: #777;
-  cursor: default;
-  box-shadow: none;
-}
-
-.pageNumber:disabled:hover,
-.arrow:disabled:hover {
-  transform: none;
-  box-shadow: none;
-}
-
-/* Активная страница */
+/* Стили для активной страницы */
 .pageNumber.active {
   background-color: #007bff;
   color: #fff;
   border-color: #007bff;
+  transform: scale(1.1);
+  font-weight: bold;
+}
+
+/* Темная тема - активная страница */
+.pagination.dark .pageNumber.active {
+  background-color: #0056b3;
+  border-color: #004494;
 }
 
 .list {
