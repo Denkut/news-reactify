@@ -23,14 +23,17 @@ const Pagination = ({
       </button>
       <div className={styles.list}>
         {[...Array(totalPages)].map((_, index) => {
+          const pageNumber = index + 1;
           return (
             <button
-              onClick={() => handlePageClick(index + 1)}
-              className={styles.pageNumber}
-              disabled={index + 1 === currentPage}
               key={index}
+              onClick={() => handlePageClick(pageNumber)}
+              className={`${styles.pageNumber} ${
+                pageNumber === currentPage ? styles.active : ""
+              }`}
+              disabled={pageNumber === currentPage}
             >
-              {index + 1}
+              {pageNumber}
             </button>
           );
         })}
