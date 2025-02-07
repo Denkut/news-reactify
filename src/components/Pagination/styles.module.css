@@ -1,20 +1,59 @@
-.pagination {
+  
+ .pagination {
   display: flex;
-  width: 100%; /* Исправлено */
+  width: 100%;
   gap: 12px;
   align-items: center;
   justify-content: center;
   padding: 16px;
-  background-color: #f9f9f9;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Светлая тема */
+.pagination.light {
+  background-color: #f9f9f9;
+}
+
+.pagination.light .pageNumber,
+.pagination.light .arrow {
+  background-color: white;
+  color: black;
+  border: 1px solid #ddd;
+}
+
+.pagination.light .pageNumber:hover,
+.pagination.light .arrow:hover {
+  background-color: #007bff;
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+/* Темная тема */
+.pagination.dark {
+  background-color: #23272f;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.pagination.dark .pageNumber,
+.pagination.dark .arrow {
+  background-color: #23272f;
+  color: #f6f7f9;
+  border: 1px solid #3a3f4b;
+}
+
+.pagination.dark .pageNumber:hover,
+.pagination.dark .arrow:hover {
+  background-color: #0056b3;
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+/* Общие стили */
 .pageNumber,
 .arrow {
-  border: 1px solid #ddd;
-  background-color: #fff;
-  color: #333;
   font-size: 14px;
   font-weight: bold;
   padding: 8px 12px;
@@ -24,19 +63,11 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.pageNumber:hover,
-.arrow:hover {
-  background-color: #007bff;
-  color: #fff;
-  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
-  transform: translateY(-2px);
-}
-
 .pageNumber:disabled,
 .arrow:disabled {
-  border-color: #ddd;
-  background-color: #f0f0f0;
-  color: #aaa;
+  border-color: #444;
+  background-color: #2b2f36;
+  color: #777;
   cursor: default;
   box-shadow: none;
 }
@@ -47,6 +78,7 @@
   box-shadow: none;
 }
 
+/* Активная страница */
 .pageNumber.active {
   background-color: #007bff;
   color: #fff;

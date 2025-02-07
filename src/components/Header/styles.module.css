@@ -1,11 +1,26 @@
 .header {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
   padding: 12px 24px;
   background-color: white;
   border-bottom: 1px solid #f2f4f5;
+}
+
+.info {
+  display: flex;
   flex-direction: column;
   gap: 12px;
+}
+
+.dark {
+  background-color: #23272f;
+  border-bottom: 1px solid rgb(60, 60, 60);
+}
+
+.light {
+  background-color: white;
 }
 
 .title {
@@ -14,4 +29,13 @@
 
 .date {
   font-size: 16px;
+}
+
+.theme-icon {
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.theme-icon:hover {
+  transform: scale(1.1);
 }

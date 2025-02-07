@@ -33,3 +33,11 @@
 .input:hover {
   border-color: #b3b3b3;
 }
+
+.light {
+  background-color: white;
+}
+
+.dark {
+  background-color: #23272f;
+}
